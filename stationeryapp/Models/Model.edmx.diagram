@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="27b1e1a4181a4340b23158f979d42de8" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.CollectionPoint" Width="1.5" PointX="3.75" PointY="28.625" />
+        <EntityTypeShape EntityType="Model.DepartmentList" Width="1.5" PointX="6" PointY="25.5" />
+        <EntityTypeShape EntityType="Model.DisbursementListDetail" Width="1.5" PointX="5.25" PointY="15.75" />
+        <EntityTypeShape EntityType="Model.DisbursementList" Width="1.5" PointX="3" PointY="2" />
+        <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="3.75" PointY="23.75" />
+        <EntityTypeShape EntityType="Model.OutstandingList" Width="1.5" PointX="10.5" PointY="12.5" />
+        <EntityTypeShape EntityType="Model.PurchaseOrderDetail" Width="1.5" PointX="8.25" PointY="11.75" />
+        <EntityTypeShape EntityType="Model.PurchaseOrder" Width="1.5" PointX="3" PointY="8.75" />
+        <EntityTypeShape EntityType="Model.RequisitionFormDetail" Width="1.5" PointX="5.25" PointY="19.875" />
+        <EntityTypeShape EntityType="Model.RequisitionForm" Width="1.5" PointX="3" PointY="32.25" />
+        <EntityTypeShape EntityType="Model.StationeryCatalog" Width="1.5" PointX="3" PointY="14.625" />
+        <EntityTypeShape EntityType="Model.StationeryRetrievalFormDetail" Width="1.5" PointX="8.25" PointY="15.5" />
+        <EntityTypeShape EntityType="Model.StationeryRetrievalForm" Width="1.5" PointX="6" PointY="9.25" />
+        <EntityTypeShape EntityType="Model.StockAdjustmentVoucherDetail" Width="1.5" PointX="5.25" PointY="11.875" />
+        <EntityTypeShape EntityType="Model.StockAdjustmentVoucher" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="Model.StoreClerk" Width="1.5" PointX="0.75" PointY="5" />
+        <EntityTypeShape EntityType="Model.StoreManager" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.StoreSupervisor" Width="1.5" PointX="0.75" PointY="13.875" />
+        <EntityTypeShape EntityType="Model.SupplierList" Width="1.5" PointX="0.75" PointY="9.625" />
+        <EntityTypeShape EntityType="Model.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" />
+        <AssociationConnector Association="Model.FK_CollectionPoints_StoreClerk" />
+        <AssociationConnector Association="Model.FK_DepartmentList_CollectionPoints" />
+        <AssociationConnector Association="Model.FK_DepartmentList_DepartmentHead" />
+        <AssociationConnector Association="Model.FK_DepartmentList_Employee" />
+        <AssociationConnector Association="Model.FK_DisbursementLists_DepartmentList" />
+        <AssociationConnector Association="Model.FK_Employee_DepartmentList" />
+        <AssociationConnector Association="Model.FK_StationeryRetrievalFormDetails_DepartmentList" />
+        <AssociationConnector Association="Model.FK_DisbursementListDetails_DisbursementLists" />
+        <AssociationConnector Association="Model.FK_DisbursementListDetails_StationeryCatalog" />
+        <AssociationConnector Association="Model.FK_RequisitionForms_DepartmentHead" />
+        <AssociationConnector Association="Model.FK_RequisitionForms_Employee" />
+        <AssociationConnector Association="Model.FK_OutstandingList_PurchaseOrder" />
+        <AssociationConnector Association="Model.FK_OutstandingList_RetrievalFormDetails" />
+        <AssociationConnector Association="Model.FK_PurchaseOrderDetails_PurchaseOrders" />
+        <AssociationConnector Association="Model.FK_PurchaseOrderDetails_StationeryCatalog" />
+        <AssociationConnector Association="Model.FK_PurchaseOrders_StoreClerk" />
+        <AssociationConnector Association="Model.FK_PurchaseOrders_StoreClerk1" />
+        <AssociationConnector Association="Model.FK_PurchaseOrders_StoreSupervisor" />
+        <AssociationConnector Association="Model.FK_PurchaseOrders_SupplierList" />
+        <AssociationConnector Association="Model.FK_RequisitionFormDetails_RequisitionForms" />
+        <AssociationConnector Association="Model.FK_RequisitionFormDetails_StationeryCatalog" />
+        <AssociationConnector Association="Model.FK_RequisitionForms_StoreClerk" />
+        <AssociationConnector Association="Model.FK_StationeryCatalog_SupplierList" />
+        <AssociationConnector Association="Model.FK_StationeryCatalog_SupplierList1" />
+        <AssociationConnector Association="Model.FK_StationeryCatalog_SupplierList2" />
+        <AssociationConnector Association="Model.FK_StationeryRetrievalFormDetails_StationeryCatalog" />
+        <AssociationConnector Association="Model.FK_StockAdjustmentVoucherDetails_StationeryCatalog" />
+        <AssociationConnector Association="Model.FK_StationeryRetrievalFormDetails_StationeryRetrievalForms" />
+        <AssociationConnector Association="Model.FK_StockAdjustmentVoucherDetails_StockAdjustmentVouchers" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
